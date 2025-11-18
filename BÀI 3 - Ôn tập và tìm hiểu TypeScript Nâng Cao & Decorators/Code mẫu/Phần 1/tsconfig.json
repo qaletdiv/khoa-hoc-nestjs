@@ -11,6 +11,9 @@
     "sourceMap": true,
     "declaration": true,
 
-    "skipLibCheck": true
+    "skipLibCheck": true,
+
+    "experimentalDecorators": false,
+    "useDefineForClassFields": true,
   }
 }
