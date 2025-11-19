@@ -2,7 +2,7 @@
 function Controller(path: string) {
 
     // Trả về hàm Decorator thực sự
-    return function (originalClass: any, context: ClassDecoratorContext) {
+    return function (originalClass: new (...args: any[]) => any, context: ClassDecoratorContext) {
 
         // Kiểm tra xem có đúng là đang áp dụng lên Class không
         if (context.kind === 'class') {
