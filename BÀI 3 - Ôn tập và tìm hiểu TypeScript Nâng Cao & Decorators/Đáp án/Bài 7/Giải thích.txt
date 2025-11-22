@@ -1,0 +1,2 @@
+Nguyên nhân lỗi: Decorator trả về một hàm mới thay thế hàm cũ.
+Trong hàm mới, logic tính toán (val * 2) đã thực hiện xong nhưng không có lệnh return. Do đó, hàm mặc định trả về undefined.
