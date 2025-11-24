@@ -1,0 +1,3 @@
+- Vấn đề nằm ở dòng this.sender = new EmailSender(). Class NotificationService đang tự mình quyết định và khởi tạo cụ thể EmailSender.
+- Kiểu dữ liệu của thuộc tính sender cũng đang bị fix cứng là EmailSender.
+- Nếu muốn đổi sang SMS, lập trình viên buộc phải mở file NotificationService ra, sửa EmailSender thành SmsSender ở cả phần khai báo và phần new. Điều này vi phạm nguyên tắc "Open/Closed" (Mở cho mở rộng, đóng cho sửa đổi).
